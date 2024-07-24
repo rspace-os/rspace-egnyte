@@ -4,7 +4,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>rspace-egnyte</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <parent>
     <groupId>com.github.rspace-os</groupId>
@@ -16,10 +16,6 @@
     <plugins>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-toolchains-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
@@ -62,7 +58,6 @@
       <version>4.5.3</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
     <dependency>
       <groupId>commons-io</groupId>
       <artifactId>commons-io</artifactId>
@@ -89,4 +84,5 @@
       <version>2.2.4</version>
     </dependency>
   </dependencies>
+
 </project>
