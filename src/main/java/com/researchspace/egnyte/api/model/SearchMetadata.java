@@ -5,7 +5,9 @@ import java.util.List;
 import com.researchspace.egnyte.api.clients.requests.JsonRequestBody;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class SearchMetadata extends JsonRequestBody {
 

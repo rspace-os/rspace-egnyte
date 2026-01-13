@@ -3,8 +3,10 @@ package com.researchspace.egnyte.api.model;
 import java.sql.Date;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class SearchDateRange extends SearchRange {
 

@@ -5,7 +5,9 @@ import java.io.File;
 import com.researchspace.egnyte.api.clients.responses.ResponseObject;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class ChunkedUploadResult extends ResponseObject {
 
