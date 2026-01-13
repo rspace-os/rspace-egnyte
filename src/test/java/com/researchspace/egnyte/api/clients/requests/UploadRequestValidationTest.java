@@ -1,6 +1,6 @@
 package com.researchspace.egnyte.api.clients.requests;
 
-import static org.apache.commons.lang.RandomStringUtils.randomAlphabetic;
+import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
 import static org.junit.Assert.assertEquals;
 
 import java.io.File;
