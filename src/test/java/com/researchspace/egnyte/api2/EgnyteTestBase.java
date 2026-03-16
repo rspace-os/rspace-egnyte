@@ -11,8 +11,8 @@ import java.net.URL;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validator;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validator;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.After;
@@ -21,6 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
@@ -111,7 +112,7 @@ public abstract class EgnyteTestBase extends AbstractJUnit4SpringContextTests {
      * @param path
      * @return
      */
-    HttpStatus deleteFolder(String path) {
+    HttpStatusCode deleteFolder(String path) {
         DeleteRequest request = new DeleteRequest(path);
         EgnyteResult<EmptyResponse> resp = egnyteApi.deleteItem(token, request);
         assertEquals(HttpStatus.OK, resp.getStatusCode());

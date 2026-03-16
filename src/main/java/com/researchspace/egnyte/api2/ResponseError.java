@@ -1,6 +1,7 @@
 package com.researchspace.egnyte.api2;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 
 import lombok.Data;
 import lombok.Value;
@@ -9,7 +10,7 @@ import lombok.Value;
 @Value
 public class ResponseError {
 	
-	HttpStatus httpStatus;
+	HttpStatusCode httpStatus;
 	String message;
 	String responseAsString;
 

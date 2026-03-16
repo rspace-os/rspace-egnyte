@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 import org.junit.After;
 import org.junit.Before;
