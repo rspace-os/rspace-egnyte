@@ -1,6 +1,7 @@
 package com.researchspace.egnyte.api2;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 
 import lombok.Data;
@@ -28,7 +29,7 @@ public class EgnyteResult<T> {
 	 * Gets status either from success result or error.
 	 * @return
 	 */
-	public HttpStatus getStatusCode() {
+	public HttpStatusCode getStatusCode() {
 		return isSuccessful()?successResult.getStatusCode():error.getHttpStatus();
 	}
 	/**

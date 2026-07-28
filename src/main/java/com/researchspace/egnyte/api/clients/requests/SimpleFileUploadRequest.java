@@ -2,7 +2,7 @@ package com.researchspace.egnyte.api.clients.requests;
 
 import java.io.File;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 
