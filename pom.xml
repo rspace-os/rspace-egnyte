@@ -9,7 +9,7 @@
   <parent>
     <groupId>com.github.rspace-os</groupId>
     <artifactId>rspace-parent</artifactId>
-    <version>3.0.0</version>
+    <version>314e7a9f6f729d219c4157c73dffd8314233de82</version>
   </parent>
 
   <repositories>
@@ -53,10 +53,13 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -70,7 +73,7 @@
       <version>${jakarta.validation.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.hibernate</groupId>
+      <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>${hibernate.validator.version}</version>
     </dependency>
@@ -86,5 +89,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
 </project>
